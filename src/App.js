@@ -9,13 +9,13 @@ import Diffing from "./learn-react/Diffing";
 import List from "./learn-react/List";
 
 class App extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     theme: themes.dark,
-  //     toggleTheme: this.toggleTheme,
-  //   };
-  // }
+  constructor(props) {
+    super(props);
+    this.state = {
+      theme: themes.dark,
+      toggleTheme: this.toggleTheme,
+    };
+  }
 
   // toggleTheme = () => {
   //   console.log("toogle");
@@ -29,9 +29,12 @@ class App extends React.Component {
     renderList: true,
   };
   componentDidMount() {
-    console.log("[App.js] componentDidMount");
+    console.log("some changes in [App.js]");
   }
 
+  componentDidUpdate() {
+    console.log("[App.js] updated!!!");
+  }
   render() {
     console.log("[App.js] rendering...");
     const style = {
@@ -41,14 +44,9 @@ class App extends React.Component {
       padding: "8px 16px",
     };
     return (
-      // <ThemeContext.Provider value={this.state}>
-      //   <Header />
-
-      //   <Game />
-      //   <Footer />
-      // </ThemeContext.Provider>
       <>
         <header>
+          <List />
           <Container>
             <h1>DiffingAlgorithm</h1>
             <div className="DiffingHeader">
@@ -73,7 +71,6 @@ class App extends React.Component {
           </Container>
         </header>
         {this.state.renderDiffing ? <Diffing /> : null}
-        {this.state.renderList ? <List /> : null}
       </>
     );
   }
