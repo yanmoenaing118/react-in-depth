@@ -3,6 +3,7 @@ import { ThemeContext } from "./ThemeContext";
 import ToggleThemeButton from "./ToggleThemeButton";
 class Header extends Component {
   constructor(props) {
+    console.log("Hello");
     super(props);
   }
   render() {
