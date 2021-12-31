@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { ThemeContext } from "./ThemeContext";
 import ToggleThemeButton from "./ToggleThemeButton";
 class Header extends Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     const { theme } = this.context;
     return (
