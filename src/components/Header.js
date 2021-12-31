@@ -11,12 +11,7 @@ class Header extends Component {
           backgroundColor: theme.background,
           color: theme.foreground,
         }}
-      >
-        <div>
-          <h1>Let's play Tic-Tac-Toe</h1>
-          <ToggleThemeButton />
-        </div>
-      </header>
+      ></header>
     );
   }
 }
