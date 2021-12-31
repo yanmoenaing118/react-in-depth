@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { ThemeContext } from "./ThemeContext";
 import ToggleThemeButton from "./ToggleThemeButton";
 class Header extends Component {
+  fun() {
+    console.log("Header updtated");
+  }
   render() {
     const { theme } = this.context;
     console.log("[Header.js] updated v0.0.1");
