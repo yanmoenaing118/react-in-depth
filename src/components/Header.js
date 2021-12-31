@@ -4,6 +4,7 @@ import ToggleThemeButton from "./ToggleThemeButton";
 class Header extends Component {
   render() {
     const { theme } = this.context;
+    console.log("[Header.js] updated v0.0.1");
     return (
       <header
         style={{
