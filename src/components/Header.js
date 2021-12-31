@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { ThemeContext } from "./ThemeContext";
 import ToggleThemeButton from "./ToggleThemeButton";
 class Header extends Component {
+  main() {
+    console.log("changes made in main branch");
+  }
   fun() {
     console.log("Header updtated");
   }
