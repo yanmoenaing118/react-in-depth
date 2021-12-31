@@ -46,7 +46,7 @@ class App extends React.Component {
     return (
       <>
         <header>
-          <List />
+          <Diffing />
           <Container>
             <h1>DiffingAlgorithm</h1>
             <div className="DiffingHeader">
