@@ -8,6 +8,7 @@ class Header extends Component {
   }
   render() {
     const { theme } = this.context;
+    console.log(theme);
     return (
       <header
         style={{
