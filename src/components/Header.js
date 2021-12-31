@@ -11,7 +11,7 @@ class Header extends Component {
   }
   render() {
     const { theme } = this.context;
-    console.log("[Header.js] updated v0.0.1");
+    console.log(theme);
     return (
       <header
         style={{
