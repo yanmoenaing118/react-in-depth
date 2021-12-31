@@ -11,11 +11,7 @@ export default class List extends Component {
   };
 
   componentDidMount() {
-    fetch("http://localhost:9000/items")
-      .then((res) => res.json())
-      .then((items) => {
-        this.setState({ items });
-      });
+    console.log("[List.js] componentDidMount");
   }
 
   deleteListItem(id) {
@@ -23,6 +19,7 @@ export default class List extends Component {
     const index = items.findIndex((item) => item.id === id);
     items.splice(index, 1);
     this.setState({ items: items });
+    console.log("some changes in [List.js]");
   }
 
   addNewItem() {
